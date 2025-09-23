@@ -1,69 +1,40 @@
-# React + TypeScript + Vite
+# User Management Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web desarrollada en **React** para la gestión de usuarios, con búsqueda avanzada, paginación y una interfaz moderna.
 
-Currently, two official plugins are available:
+## Características principales
+- Tabla de usuarios **responsive** con datos en tiempo real  
+- Búsqueda inteligente con **debounce (400ms)**  
+- **Paginación funcional** con navegación entre páginas  
+- Modal con **detalles completos del usuario**  
+- Validación y **sanitización de datos**  
+- Sincronización con la **URL** para enlaces compartibles  
+- Manejo de **estados de carga y error**  
+- **Diseño responsive** para móvil y escritorio  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologías utilizadas
+- **React 18** – Framework principal  
+- **TypeScript** – Tipado estático  
+- **React Query (TanStack Query)** – Gestión del estado del servidor  
+- **Tailwind CSS** – Estilos rápidos y consistentes  
+- **Vite** – Herramienta de build y desarrollo  
+- **DummyJSON API** – Fuente de datos  
 
-## Expanding the ESLint configuration
+## Requisitos previos
+- **Node.js** v16 o superior  
+- **npm** o **yarn** como gestor de paquetes  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## Instalación y ejecución
+1. **Clonar el repositorio**  
+   ```bash
+   git clone <url-del-repositorio>
+   cd prueba-tecnica-rooftop
+2. **Instalar dependencias** 
+   ```bash
+   npm install
+3. **Iniciar el servidor de desarrollo**
+   ```bash
+   npm run dev
+4. **Abrir la aplicacion en el navegador**
+    http://localhost:5173
+  
