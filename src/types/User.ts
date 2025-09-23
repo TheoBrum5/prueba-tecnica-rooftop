@@ -1,3 +1,5 @@
+// src/types/User.ts
+
 export interface User {
   id: number;
   firstName: string;
@@ -12,6 +14,7 @@ export interface User {
   image: string;
 }
 
+// AGREGAR ESTO SI NO LO TIENES:
 export interface ApiResponse {
   users: User[];
   total: number;
