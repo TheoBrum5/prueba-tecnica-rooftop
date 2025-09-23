@@ -1,5 +1,3 @@
-// src/components/UserTable/UserTable.tsx
-
 import React from 'react';
 import type { User } from '../../types/User';
 import TableHeader from './TableHeader';

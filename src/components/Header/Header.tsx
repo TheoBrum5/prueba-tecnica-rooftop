@@ -1,6 +1,5 @@
-// src/components/Header/Header.tsx
-
 import React, { useState } from 'react';
+import { Logo } from '../UI';
 
 type HeaderProps = {
   currentPage?: string;
@@ -20,17 +19,8 @@ const Header: React.FC<HeaderProps> = ({ currentPage = 'Usuarios' }) => {
     <header className="bg-white border-b border-gray-200" style={{ boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1)' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo ACME */}
-          <div className="flex-shrink-0">
-            <div className="flex flex-col">
-              <span className="text-xl font-bold text-gray-900 leading-tight" style={{fontFamily: 'Arial, sans-serif'}}>
-                ACME
-              </span>
-              <span className="text-xs text-gray-600 font-normal tracking-widest" style={{fontFamily: 'Arial, sans-serif'}}>
-                CORPORATION
-              </span>
-            </div>
-          </div>
+          {/* Logo ACME usando componente reutilizable */}
+          <Logo size="md" />
 
           {/* Navegación - Desktop */}
           <nav className="hidden md:flex space-x-8">
