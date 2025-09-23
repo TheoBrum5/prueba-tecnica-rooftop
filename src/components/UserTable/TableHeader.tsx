@@ -1,5 +1,3 @@
-// src/components/UserTable/TableHeader.tsx
-
 import React from 'react';
 
 const TableHeader: React.FC = () => {

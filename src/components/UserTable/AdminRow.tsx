@@ -1,5 +1,3 @@
-// src/components/UserTable/AdminRow.tsx
-
 import React from 'react';
 import type { User } from '../../types/User';
 
